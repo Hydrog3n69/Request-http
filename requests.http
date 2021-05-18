@@ -1,0 +1,67 @@
+
+### get wilders 
+GET  https://http-practice.herokuapp.com/wilders
+
+### get wilderspage 2
+GET https://http-practice.herokuapp.com/wilders?page=2
+
+### get wilders language
+GET https://http-practice.herokuapp.com/wilders?language=C%23
+
+### get wilders learn php & page 2
+GET https://http-practice.herokuapp.com/wilders?language=PHP&page=2
+
+
+###---------------- POST ------------------------
+
+POST https://http-practice.herokuapp.com/wilders
+Content-Type: application/x-www-form-urlencoded
+
+name=John%20Doe&language=C%23
+
+### post request on json format
+
+POST https://http-practice.herokuapp.com/wilders
+Content-Type: application/json
+
+{
+  "name": "Jaimond Florian",
+  "language": "JavaScript"
+}
+### create post url encoded format
+POST https://http-practice.herokuapp.com/wilders
+Content-Type: application/x-www-form-urlencoded
+
+name=John%20Wick&language=JavaScript
+
+### create post json format
+POST https://http-practice.herokuapp.com/wilders
+Content-Type: application/json
+
+{
+    "name":"Spike Spiegel",
+    "language":"JavaScript"
+}
+
+### request post before with id to get john wick
+
+GET https://http-practice.herokuapp.com/wilders/1645471
+
+### request post before with id to get spyke
+
+GET https://http-practice.herokuapp.com/wilders/1645472
+
+###------------------- PUT ----------------------
+
+### with method put I update language data from id 1645471
+
+PUT https://http-practice.herokuapp.com/wilders/1645471
+Content-Type: application/json
+
+{
+    "language":"PHP"
+}
+
+###----------------- delete -------------------
+### delete john wick
+DELETE https://http-practice.herokuapp.com/wilders/1645471
